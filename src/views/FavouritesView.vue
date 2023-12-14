@@ -8,7 +8,6 @@
         <div class="card__inner" 
         :class="{ 'is-flipped': pokemon.isFlipped }"
         :style="{ backgroundColor: typeColors[pokemon.type] }">          
-          <!-- Card frontal -->
           <div class="card__face card__face--front card-front">
             <div><StartsComponent /> </div>
             <div class="number"><span class="number"># {{ pokemon.id.toString().padStart(4, 0) }}</span></div>
@@ -23,7 +22,6 @@
               <button @click="removerDeFavoritos(pokemon)">Remover de favoritos</button>
             </div>
           </div>
-          <!-- Card trasera -->
           <div class="card__face card__face--back card-back">
             <div class="pokemon">
               <p class="text-primary">Habilidades: </p>
@@ -98,20 +96,6 @@ const typeColors = {
 
 <style lang="scss" scoped>
 
-/* 
-video{
-    z-index: -1000;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-} */
 
 * {
   margin: 0;
@@ -128,7 +112,6 @@ body {
     font-size: 15px;
 }
 
-/* BOTONES PAGINACIÓN */
 #pagination {
   display: flex;
 }
@@ -184,7 +167,6 @@ body {
   margin-top: 20px;
 }
 
-// CARDS
 .card {
   width: 350px;
   height: 600px;
@@ -265,7 +247,6 @@ body {
     position: relative;
 }
 
-// CARD EFFECTS
 .img-container img {
     width: 100%;
     transition: 1s;
@@ -280,7 +261,6 @@ img {
 }
 
 
-//  BARRA ESTADISTICAS
 .stats-container {
   display: flex;
   flex-direction: column;

@@ -3,11 +3,6 @@ import { ref } from "vue";
 import Pagination from "../components/Pagination.vue"
 import Header1Component from "./../components/Header1Component.vue"
 
-
-//PRUEBA DE TIENDA
-
-// FIN DE TIENDA
-
 </script>
 
 <template>

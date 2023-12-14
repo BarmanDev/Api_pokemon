@@ -50,13 +50,6 @@
   </script>
   
   <style lang="scss">
- /*  .pokemon{
-      margin: 2rem;
-      width: 30%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
     
 .card {
   margin-left: 30px;
